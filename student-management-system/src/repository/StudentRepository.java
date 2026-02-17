@@ -5,7 +5,7 @@ import java.util.List;
 import model.Student;
 
 public class StudentRepository {
-    private List<Student> students = new ArrayList<>();
+    private final List<Student> students = new ArrayList<>();
 
     public void addStudent(Student student){
         students.add(student);

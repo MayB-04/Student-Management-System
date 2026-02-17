@@ -6,7 +6,7 @@ import repository.StudentRepository;
 
 public class StudentService {
     
-    private StudentRepository repository = new StudentRepository();
+    private final StudentRepository repository = new StudentRepository();
 
     public void addStudent(int id, String name, int age){
         repository.addStudent(new Student(id,name,age));
